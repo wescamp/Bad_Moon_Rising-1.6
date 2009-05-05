@@ -352,9 +352,9 @@
 	controller=ai
 	fog=no
 	recruit=Primeval Slow, Primeval Driver, Primeval Swiftfoot, Primeval Striker, Primeval Ironwheel
-# he gets income in the first turns before he shows up.  If he gets gold, we will have 1,000 AI units shuffling around
+# he gets income in the first turns before he shows up
 	{GOLD 100 100 100}
-	{INCOME 4 5 7}
+	{INCOME 8 10 12}
 	[ai]
 	aggression=0.8
 	grouping=offensive
@@ -363,14 +363,6 @@
 		y=3-10
 		value=50
 	    [/protect_location]
-	    [target]
-		side=6
-		value=100
-	    [/target]
-	    [target]
-		side=1
-		value=500
-	    [/target]
 	    [leader_goal]
 		x,y=61,36
 	    [/leader_goal]
@@ -387,10 +379,6 @@
 	team_name=khthon
 	   [ai]
 	    [target]
-		side=1
-		value=1
-	    [/target]
-	    [target]
 		side=2
 		value=600
 	    [/target]
@@ -400,7 +388,7 @@
 	    [/target]
 	    [target]
 		side=5
-		value=600
+		value=500
 	    [/target]
 	    aggression=0.8
 	    caution=0.7
@@ -559,7 +547,7 @@
 	[/event]
 
 	[event]
-	name=turn 4
+	name=turn 8
 	{GENERIC_UNIT 6 Yak 71 1}
 	{GENERIC_UNIT 6 Ophis 73 1}
 	{GENERIC_UNIT 6 Pegusa 72 1}
@@ -572,7 +560,7 @@
 	[/message]
 	[message]
 	speaker=Raenna
-	message= _ "Those damn animals...  What is going on?"
+	message= _ "More of those damn animals, what is going on?"
 	[/message]
 	[message]
 	speaker=Athanta
@@ -592,7 +580,7 @@
 	    [then]
 		[terrain]
 		terrain=Ce
-		x,y=12,69 
+		x,y=41,68 
 	        [/terrain]
 	    [/then]
 	[/if]
@@ -614,7 +602,7 @@
 # one of two spawn points, might want to add to this at some point.
 	    [set_variable]
 		name=rand2
-		rand=80,1,80,80
+		rand=1,80
 	    [/set_variable]
 	    [unit]
 		side=6
@@ -655,6 +643,10 @@
 		name=prime1
 		rand="Primeval Striker","Primeval Driver","Primeval Slow","Primeval Swiftfoot","Primeval Slow","Primeval Swiftfoot"
 	    [/set_variable]
+	    [set_variable]
+		name=rand2
+		rand=1,40
+	    [/set_variable]
 	    [unit]
 		side=5
 		type=$prime1
@@ -663,9 +655,10 @@
 		{TRAIT_LOYAL}
 		{TRAIT_QUICK}
 		[/modifications]
-		x,y=9,69
+		x,y=$rand2,69
 	    [/unit]
 	    {CLEAR_VARIABLE prime1}
+	    {CLEAR_VARIABLE rand2}
 	    [/then]
 	[/if]
 	    [if]
@@ -684,26 +677,21 @@
 	    [if]
 	        [variable]
 		name=mono
-	{QUANTITY numerical_equals 8 6 4}
+	{QUANTITY numerical_equals 6 4 3}
 		[/variable]
 		[then]
 		[unstore_unit]
 		    variable=ares
 		[/unstore_unit]
-	{GENERIC_UNIT 5 "Primeval Driver" 15 70}
+	{GENERIC_UNIT 5 "Primeval Driver" 44 69}
 	{GENERIC_UNIT 5 "Primeval Striker" 42 66}
 	[music]
-	name="knalgan_theme.ogg"
+	name="suspense.ogg"
 	immediate=yes
-	append=yes
 	[/music]
 		[message]
 		speaker=Ares
-		message= _ "Where does he think he's going?  We will not let them reach the stronghold..."
-		[/message]
-		[message]
-		speaker=Raenna
-		message= _ "(A stronghold...)"
+		message= _ "Where does he think he's going?  Do not let him reach that monolith."
 		[/message]
 		[message]
 		speaker=Athanta
@@ -711,7 +699,7 @@
 		[/message]
 		[message]
 		speaker=Ares
-		message= _ "Nemesis has a plan, she will join us in a little while."
+		message= _ "Nemesis has a plan. She will join us in a little while."
 		[/message]
 		[/then]
 	    [/if]
@@ -731,67 +719,6 @@
 	speaker=Athanta
 	message= _ "It probably needs to be activated by the dark spirits."
 	[/message]
-	[/event]
-
-# Does this help Athanta be less stupid?  Maybe.  Not sure.
-	[event]
-	name=moveto
-	    [filter]
-		id=Athanta
-		x,y=43,53
-	    [/filter]
-		[modify_side]
-		side=2
-		[ai]
-		aggression=0.8
-		grouping=offensive
-		    [target]
-			side=1
-			value=900
-		    [/target]
-		    [target]
-			side=6
-			value=1
-		    [/target]
-		village_value=0
-		caution=0.8
-		[/ai]
-		[/modify_side]
-	[/event]
-
-# Belleros has made it past Athanta, so she heads back to the other keeps
-
-	[event]
-	name=moveto
-	    [filter]
-		id=C_Belleros
-		y=1-50
-	    [/filter]
-		[modify_side]
-		side=2
-		[ai]
-		aggression=0.8
-		grouping=offensive
-                   [protect_location]
-                        x=62-67
-                        y=28-31
-                        value=500
-                    [/protect_location]
-                    [leader_goal]
-                        x,y=68-36
-                    [/leader_goal]
-		    [target]
-			side=1
-			value=900
-		    [/target]
-		    [target]
-			side=6
-			value=1
-		    [/target]
-		village_value=0
-		caution=0.8
-		[/ai]
-		[/modify_side]
 	[/event]
 
 # Athanta starts to head towards the mountain keeps
@@ -868,23 +795,23 @@
 		[/unstore_unit]
 		    [recall]
  		       type=Ukian Deadeye
-			x,y=13,70
+			x,y=42,67
 		    [/recall]
 		    [recall]
  		       type=Ukian Witch
-			x,y=13,68
+			x,y=40,68
 		    [/recall]
 		    [recall]
  		       type=Ukian Commando
-			x,y=11,69
+			x,y=40,69
 		    [/recall]
 		    [recall]
  		       type=Ukian Flareman
-			x,y=12,70
+			x,y=42,68
 		    [/recall]
 		    [recall]
  		       type=Ukian Veteran
-			x,y=11,70
+			x,y=43,67
 		    [/recall]
 
 		[message]
@@ -932,15 +859,15 @@
 		message= _ "We need to reach that monolith up ahead, it will allow us to gain the upper hand against the demons."
 		[/message]
 		[message]
-		x,y=13,70
+		x,y=42,67
 		message= _ "Yessir!..."
 		[/message]
-	{MODIFY_UNIT x,y=13,70 facing sw} 
+	{MODIFY_UNIT x,y=40,69 facing se} 
 		[message]
-		x,y=13,70
+		x,y=40,69
 		message= _ "Sir!  The demon forces are scaling the cliff!"
 		[/message]
-	{MODIFY_UNIT id=C_Belleros facing se} 
+	{MODIFY_UNIT id=C_Belleros facing sw} 
 		[message]
 		speaker=C_Belleros
 		message= _ "And they are too spread out for us to simply drop rocks on their heads.  We must not stay here, we must get to the monolith!"
@@ -957,30 +884,6 @@
 		name=turn_counter
 		value=1
 		[/set_variable]
-		[message]
-		speaker=Athanta
-		message= _ "Keep the big cat busy, I will make sure the human pawns do not reach that monolith."
-		[/message]
-		[modify_side]
-		side=2
-		[ai]
-		aggression=0.8
-		grouping=offensive
-		    [target]
-			side=1
-			value=900
-		    [/target]
-		    [target]
-			side=6
-			value=1
-		    [/target]
-		    [leader_goal]
-			x,y=43,53
-		    [/leader_goal]
-		village_value=0
-		caution=0.8
-		[/ai]
-		[/modify_side]
 		[objectives]
 		side=1
 			[objective]
@@ -1411,11 +1314,6 @@ Do not worry, Raenna, you will not die with them.  You can spend your days as on
 		role=Follower3
 		message= _ "Ah...  I see!  Maybe it can blow up our false gods!  At least we take them down with us."
 		[/message]
-		[message]
-		speaker=Chimera
-		message= _ "Snarl!"
-		sound=drake-hit-2.ogg
-		[/message]
 		[modify_side]
 		side=6
 		[ai]
@@ -1431,8 +1329,8 @@ Do not worry, Raenna, you will not die with them.  You can spend your days as on
 		side=1
 		[ai]
 		[target]
-		side=3
-		value=500
+		side=5
+		value=900
 		[/target]
 		aggression=0.9
 		caution=0.6
