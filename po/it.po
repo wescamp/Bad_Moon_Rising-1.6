@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2009-07-05 17:20+0200\n"
+"POT-Creation-Date: 2009-07-12 17:51+0200\n"
 "PO-Revision-Date: 2008-05-05 10:30+0100\n"
 "Last-Translator: Brivido <brivido(at)gmail.com>\n"
 "Language-Team: none\n"
@@ -16,7 +16,7 @@ msgstr ""
 #. [campaign]: id=Bad_Moon_Rising_III
 #. [editor_group]: id=bmr
 #: Bad_Moon_Rising/_main.cfg:18 Bad_Moon_Rising/_main.cfg:33
-#: Bad_Moon_Rising/_main.cfg:48 Bad_Moon_Rising/_main.cfg:110
+#: Bad_Moon_Rising/_main.cfg:48 Bad_Moon_Rising/_main.cfg:108
 msgid "Bad Moon Rising"
 msgstr ""
 
@@ -71,8 +71,8 @@ msgid ""
 "A soldier of Weldyn is captured by a necromancer.  His attempt to escape "
 "sets events in motion that could have consequences for all life on the "
 "planet.  (5/5 scenarios playable, some less trivial than others.  Relatively "
-"quick adventure-ish campaign, no recruiting.  Status for 0.8.2: some "
-"scenario revisions, maybe a little harder.)"
+"quick adventure-ish campaign, no recruiting.  Status for 0.8.3: some minor "
+"scenario revisions)"
 msgstr ""
 
 #. [campaign]: id=Bad_Moon_Rising
@@ -104,8 +104,8 @@ msgstr "Subcomandante"
 msgid ""
 "The best of intentions often do not lead to the best results.  The new King "
 "was cruel, but the rebellion unwittingly unleashes an even greater evil on "
-"the world.  (Some scenarios are not balanced.  Status for 0.8.2:  Not much "
-"has changed.)"
+"the world.  (Some scenarios are not balanced.  Status for 0.8.3:  Ukian "
+"Faction stats weakened for balancing.)"
 msgstr ""
 "Non sempre le migliori intenzioni portano a buoni risultati. Il principe era "
 "un mostro, ma per rovesciarlo, il tenente Lorenzo involontariamente libera "
@@ -124,8 +124,8 @@ msgstr ""
 #: Bad_Moon_Rising/_main.cfg:57
 msgid ""
 "Battles were won, but the war is not over.  The Ukians find they did not "
-"fully understand just how much danger the world is in.  (UPDATE for 0.8.2:  "
-"Graphics updates.  Revisions to last scenario, Khthon faction)"
+"fully understand just how much danger the world is in.  (UPDATE for 0.8.3: "
+"Primeval and Khthon Factions weakened for balancing.)"
 msgstr ""
 
 #. [about]
@@ -143,7 +143,7 @@ msgstr ""
 msgid "Bad Moon Era"
 msgstr ""
 
-#. [multiplayer_side]: id=BMR_Khthon, type=Khthon Archer
+#. [multiplayer_side]: id=BMR_Khthon, type=Khthon-archer
 #: Bad_Moon_Rising/eras/khthon_MP.cfg:5
 msgid "Khthon"
 msgstr ""
@@ -8632,43 +8632,6 @@ msgid ""
 "friends, there is so much to talk about..."
 msgstr ""
 
-#. [unit_type]: id=Bad Raenna, race=human
-#: Bad_Moon_Rising/units/Bad_Raenna.cfg:5
-#, fuzzy
-msgid "Dark Herald"
-msgstr "Varrak"
-
-#. [advancement]: id=amla_raenna_sword
-#: Bad_Moon_Rising/units/Bad_Raenna.cfg:21
-msgid "Max HP bonus +2, Melee Damage +2, Max Exp penalty 30%"
-msgstr ""
-
-#. [advancement]: id=amla_raenna_nightstalk
-#: Bad_Moon_Rising/units/Bad_Raenna.cfg:51
-#: Bad_Moon_Rising/units/Raenna.cfg:160
-msgid "Max HP bonus +2, Nightstalk Ability, Max Exp penalty 30%"
-msgstr ""
-
-#. [unit_type]: id=Bad Raenna, race=human
-#: Bad_Moon_Rising/units/Bad_Raenna.cfg:81
-msgid ""
-"Dark Heralds are humans that have been 'upgraded' by the Primevals.  The "
-"Primevals prefer not to speak with humans, so the Dark Herald serves as "
-"intermediary and recruiter.  Unfortunately for them, the powers they have "
-"been given come at a price."
-msgstr ""
-
-#. [attack]: type=pierce
-#: Bad_Moon_Rising/units/Bad_Raenna.cfg:108
-msgid "Pig Sticker"
-msgstr ""
-
-#. [attack]: type=fire
-#: Bad_Moon_Rising/units/Dark_Messiah.cfg:43
-#: Bad_Moon_Rising/units/Bad_Raenna.cfg:117
-msgid "Inferno"
-msgstr "Inferno"
-
 #. [unit_type]: id=Dark Messiah, race=human
 #: Bad_Moon_Rising/units/Dark_Messiah.cfg:5
 msgid "Dark Messiah"
@@ -8696,6 +8659,12 @@ msgstr ""
 #: Bad_Moon_Rising/units/primeval/Primeval_Swift.cfg:30
 msgid "Staff"
 msgstr "Bastone"
+
+#. [attack]: type=fire
+#: Bad_Moon_Rising/units/Dark_Messiah.cfg:43
+#: Bad_Moon_Rising/units/Raenna-Bad.cfg:117
+msgid "Inferno"
+msgstr "Inferno"
 
 #. [unit_type]: id=Orcish Escort, race=orc
 #: Bad_Moon_Rising/units/Grat.cfg:4
@@ -8817,15 +8786,46 @@ msgstr ""
 #: Bad_Moon_Rising/units/ukians/Ukian_Subcom.cfg:51
 #: Bad_Moon_Rising/units/Huric.cfg:79
 #: Bad_Moon_Rising/units/primeval/Primeval_Ares.cfg:57
-#: Bad_Moon_Rising/units/primeval/Primeval_Aerowheel.cfg:66
+#: Bad_Moon_Rising/units/primeval/Primeval_Aerowheel.cfg:65
 #: Bad_Moon_Rising/units/primeval/Primevalist_Shield.cfg:29
 #: Bad_Moon_Rising/units/primeval/Primeval_Nemesis.cfg:66
-#: Bad_Moon_Rising/units/primeval/Primeval_Hera.cfg:45
+#: Bad_Moon_Rising/units/primeval/Primeval_Hera.cfg:46
 #: Bad_Moon_Rising/units/primeval/Primevalist_Fanatic.cfg:29
 #: Bad_Moon_Rising/units/primeval/Primevalist_Leader.cfg:33
 #: Bad_Moon_Rising/units/primeval/Primevalist_Fighter.cfg:26
 msgid "Sword"
 msgstr "Spada"
+
+#. [unit_type]: id=Bad Raenna, race=human
+#: Bad_Moon_Rising/units/Raenna-Bad.cfg:5
+#, fuzzy
+msgid "Dark Herald"
+msgstr "Varrak"
+
+#. [advancement]: id=amla_raenna_sword
+#: Bad_Moon_Rising/units/Raenna-Bad.cfg:21
+msgid "Max HP bonus +2, Melee Damage +2, Max Exp penalty 30%"
+msgstr ""
+
+#. [advancement]: id=amla_raenna_nightstalk
+#: Bad_Moon_Rising/units/Raenna-Bad.cfg:51
+#: Bad_Moon_Rising/units/Raenna.cfg:160
+msgid "Max HP bonus +2, Nightstalk Ability, Max Exp penalty 30%"
+msgstr ""
+
+#. [unit_type]: id=Bad Raenna, race=human
+#: Bad_Moon_Rising/units/Raenna-Bad.cfg:81
+msgid ""
+"Dark Heralds are humans that have been 'upgraded' by the Primevals.  The "
+"Primevals prefer not to speak with humans, so the Dark Herald serves as "
+"intermediary and recruiter.  Unfortunately for them, the powers they have "
+"been given come at a price."
+msgstr ""
+
+#. [attack]: type=pierce
+#: Bad_Moon_Rising/units/Raenna-Bad.cfg:108
+msgid "Pig Sticker"
+msgstr ""
 
 #. [unit_type]: id=Raenna, race=ukian
 #: Bad_Moon_Rising/units/Raenna.cfg:4
@@ -8953,9 +8953,9 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=blade
-#: Bad_Moon_Rising/units/ukians/Ukian_Attackdog.cfg:37
+#: Bad_Moon_Rising/units/ukians/Ukian_Attackdog.cfg:38
 #: Bad_Moon_Rising/units/ukians/Ukian_Dog.cfg:42
-#: Bad_Moon_Rising/units/khthon/Arctic_Wolf.cfg:29
+#: Bad_Moon_Rising/units/khthon/Arctic_Wolf.cfg:23
 msgid "fangs"
 msgstr "zanne"
 
@@ -8974,7 +8974,7 @@ msgstr ""
 #: Bad_Moon_Rising/units/primeval/Primeval_Ares.cfg:47
 #: Bad_Moon_Rising/units/primeval/Primeval_Nemesis.cfg:56
 #: Bad_Moon_Rising/units/primeval/Primeval_Hera_Cloak.cfg:36
-#: Bad_Moon_Rising/units/primeval/Primeval_Hera.cfg:35
+#: Bad_Moon_Rising/units/primeval/Primeval_Hera.cfg:36
 msgid "immortal"
 msgstr ""
 
@@ -8984,7 +8984,7 @@ msgstr ""
 #: Bad_Moon_Rising/units/primeval/Primeval_Ares.cfg:49
 #: Bad_Moon_Rising/units/primeval/Primeval_Nemesis.cfg:58
 #: Bad_Moon_Rising/units/primeval/Primeval_Hera_Cloak.cfg:38
-#: Bad_Moon_Rising/units/primeval/Primeval_Hera.cfg:37
+#: Bad_Moon_Rising/units/primeval/Primeval_Hera.cfg:38
 msgid ""
 "immortal:\n"
 "This unit heals 99 HP per turn.  If poisoned, it will remove the poison."
@@ -8993,14 +8993,14 @@ msgstr ""
 #. [attack]: type=pierce
 #. [attack]: type=blade
 #: Bad_Moon_Rising/units/khthon/Chimera.cfg:43
-#: Bad_Moon_Rising/units/khthon/Orthrus.cfg:40
+#: Bad_Moon_Rising/units/khthon/Orthrus.cfg:29
 #, fuzzy
 msgid "Bite"
 msgstr "Rioter"
 
 #. [attack]: type=pierce
 #. [attack]: type=fire
-#: Bad_Moon_Rising/units/khthon/Katoblepon.cfg:46
+#: Bad_Moon_Rising/units/khthon/Katoblepon.cfg:44
 #: Bad_Moon_Rising/units/khthon/Chimera.cfg:52
 msgid "Breath"
 msgstr ""
@@ -9023,8 +9023,8 @@ msgstr ""
 
 #. [attack]: type=impact
 #: Bad_Moon_Rising/units/khthon/Echidna.cfg:56
-#: Bad_Moon_Rising/units/primeval/Primeval_Ironwheel.cfg:56
-#: Bad_Moon_Rising/units/primeval/Primeval_Firewheel.cfg:65
+#: Bad_Moon_Rising/units/primeval/Primeval_Ironwheel.cfg:57
+#: Bad_Moon_Rising/units/primeval/Primeval_Firewheel.cfg:66
 msgid "Fist"
 msgstr ""
 
@@ -9047,8 +9047,8 @@ msgid ""
 "though, so something is wrong..."
 msgstr ""
 
-#. [attack]: type=kick
-#: Bad_Moon_Rising/units/khthon/Horse.cfg:29
+#. [attack]: type=impact
+#: Bad_Moon_Rising/units/khthon/Horse.cfg:26
 msgid "kick"
 msgstr ""
 
@@ -9066,25 +9066,25 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=impact
-#: Bad_Moon_Rising/units/khthon/Katoblepon.cfg:34
-#: Bad_Moon_Rising/units/khthon/Ram.cfg:29
+#: Bad_Moon_Rising/units/khthon/Katoblepon.cfg:32
+#: Bad_Moon_Rising/units/khthon/Ram.cfg:26
 msgid "Head"
 msgstr ""
 
-#. [unit_type]: id=Khthon Archer, race=khthon
-#. [unit_type]: id=Khthon Archer2, race=khthon
+#. [unit_type]: id=Khthon-archer, race=khthon
 #: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:5
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:252
 #, fuzzy
 msgid "Khthon Archer"
 msgstr "Ukian arciere"
 
-#. [unit_type]: id=Khthon Mage, race=khthon
-#. [unit_type]: id=Khthon Archer, race=khthon
-#. [unit_type]: id=Khthon Fighter, race=khthon
-#: Bad_Moon_Rising/units/khthon/Khthon-Mage.cfg:20
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:20
-#: Bad_Moon_Rising/units/khthon/Khthon-Fighter.cfg:19
+#. [unit_type]: id=Khthon-healer, race=khthon
+#. [unit_type]: id=Khthon-dwarf, race=khthon
+#. [unit_type]: id=Khthon-archer, race=khthon
+#. [unit_type]: id=Khthon-fighter, race=khthon
+#: Bad_Moon_Rising/units/khthon/Khthon-Mage.cfg:21
+#: Bad_Moon_Rising/units/khthon/Khthon-Dwarf.cfg:20
+#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:21
+#: Bad_Moon_Rising/units/khthon/Khthon-Fighter.cfg:20
 msgid ""
 "The Khthon are a sort of earth spirit that lives through the bodies of "
 "others.  If the conquered host is near death, the Khthon will attempt to "
@@ -9092,27 +9092,21 @@ msgid ""
 msgstr ""
 
 #. [hides]: id=creep
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:40
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:42
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:289
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:291
+#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:27
+#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:29
 #, fuzzy
 msgid "creep"
 msgstr "Sorpresa!"
 
 #. [hides]: id=creep
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:41
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:43
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:290
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:292
+#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:28
+#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:30
 msgid "female^creep"
 msgstr ""
 
 #. [hides]: id=creep
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:47
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:51
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:296
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:300
+#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:34
+#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:38
 msgid ""
 "Creep:\n"
 "This unit can hide in forest or caves when it is dark, and remain undetected "
@@ -9124,31 +9118,32 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=pierce
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:64
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:312
+#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:51
 #, fuzzy
 msgid "Bow"
 msgstr "arco"
 
 #. [female]
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:143
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:391
+#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:130
 #, fuzzy
 msgid "female^Khthon Archer"
 msgstr "Cagna di Ukian"
 
-#. [unit_type]: id=Khthon Mage2, race=khthon
-#. [unit_type]: id=Khthon Archer2, race=khthon
-#. [unit_type]: id=Khthon Fighter2, race=khthon
-#: Bad_Moon_Rising/units/khthon/Khthon-Mage.cfg:249
-#: Bad_Moon_Rising/units/khthon/Khthon-Archer.cfg:269
-#: Bad_Moon_Rising/units/khthon/Khthon-Fighter.cfg:166
-msgid ""
-"The Khthon are a sort of earth spirit that lives through the bodies of "
-"others.  If the conquered host is near death, the Khthon will attempt to "
-"transfer itself to another.\n"
-"Note: This unit is near death and the Khthon will try to jump."
+#. [unit_type]: id=Khthon-dwarf, race=khthon
+#. [unit_type]: id=Khthon-fighter, race=khthon
+#: Bad_Moon_Rising/units/khthon/Khthon-Dwarf.cfg:5
+#: Bad_Moon_Rising/units/khthon/Khthon-Fighter.cfg:5
+msgid "Khthon Fighter"
 msgstr ""
+
+#. [attack]: type=pierce
+#. [attack]: type=blade
+#: Bad_Moon_Rising/units/khthon/Khthon-Dwarf.cfg:27
+#: Bad_Moon_Rising/units/primeval/Primeval_Warrior.cfg:33
+#: Bad_Moon_Rising/units/primeval/Primeval_Dogface.cfg:31
+#, fuzzy
+msgid "Axe"
+msgstr "ascia"
 
 #. [unit_type]: id=Khthon Fallen, race=khthon
 #: Bad_Moon_Rising/units/khthon/Khthon-Fallen.cfg:8
@@ -9157,44 +9152,37 @@ msgid "Fallen"
 msgstr "Mal Nezzar"
 
 #. [unit_type]: id=Khthon Fallen, race=khthon
-#: Bad_Moon_Rising/units/khthon/Khthon-Fallen.cfg:14
+#: Bad_Moon_Rising/units/khthon/Khthon-Fallen.cfg:15
 #, fuzzy
 msgid "The Fallen..."
 msgstr "Ti ringrazio, Lorenzo..."
 
-#. [unit_type]: id=Khthon Fighter, race=khthon
-#. [unit_type]: id=Khthon Fighter2, race=khthon
-#: Bad_Moon_Rising/units/khthon/Khthon-Fighter.cfg:5
-#: Bad_Moon_Rising/units/khthon/Khthon-Fighter.cfg:150
-msgid "Khthon Fighter"
+#. [attack]: type=impact
+#: Bad_Moon_Rising/units/khthon/Khthon-Fallen.cfg:19
+msgid "club"
 msgstr ""
 
 #. [attack]: type=pierce
-#: Bad_Moon_Rising/units/khthon/Khthon-Fighter.cfg:40
-#: Bad_Moon_Rising/units/khthon/Khthon-Fighter.cfg:187
-#: Bad_Moon_Rising/units/phantom/Phantom_Soldier.cfg:100
+#: Bad_Moon_Rising/units/khthon/Khthon-Fighter.cfg:27
+#: Bad_Moon_Rising/units/phantom/Phantom_Soldier.cfg:131
 #: Bad_Moon_Rising/units/phantom/Phantom_Spear.cfg:72
 #, fuzzy
 msgid "Spear"
 msgstr "lancia"
 
-#. [unit_type]: id=Khthon Mage, race=khthon
-#. [unit_type]: id=Khthon Mage2, race=khthon
+#. [unit_type]: id=Khthon-healer, race=khthon
 #: Bad_Moon_Rising/units/khthon/Khthon-Mage.cfg:5
-#: Bad_Moon_Rising/units/khthon/Khthon-Mage.cfg:232
 msgid "Khthon Mage"
 msgstr ""
 
 #. [attack]: type=impact
-#: Bad_Moon_Rising/units/khthon/Khthon-Mage.cfg:41
-#: Bad_Moon_Rising/units/khthon/Khthon-Mage.cfg:270
+#: Bad_Moon_Rising/units/khthon/Khthon-Mage.cfg:28
 #, fuzzy
 msgid "Snare"
 msgstr "lancia"
 
 #. [female]
-#: Bad_Moon_Rising/units/khthon/Khthon-Mage.cfg:123
-#: Bad_Moon_Rising/units/khthon/Khthon-Mage.cfg:352
+#: Bad_Moon_Rising/units/khthon/Khthon-Mage.cfg:110
 #, fuzzy
 msgid "female^Khthon Mage"
 msgstr "Cagna di Ukian"
@@ -9214,8 +9202,8 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=pierce
-#: Bad_Moon_Rising/units/khthon/Yak.cfg:29
-#: Bad_Moon_Rising/units/khthon/Ophis.cfg:40
+#: Bad_Moon_Rising/units/khthon/Yak.cfg:26
+#: Bad_Moon_Rising/units/khthon/Ophis.cfg:29
 #, fuzzy
 msgid "Horns"
 msgstr "Hobbes"
@@ -9249,12 +9237,12 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=impact
-#: Bad_Moon_Rising/units/khthon/Pegusa.cfg:40
+#: Bad_Moon_Rising/units/khthon/Pegusa.cfg:26
 msgid "Kick"
 msgstr ""
 
 #. [attack]: type=pierce
-#: Bad_Moon_Rising/units/khthon/Pegusa.cfg:49
+#: Bad_Moon_Rising/units/khthon/Pegusa.cfg:35
 #, fuzzy
 msgid "Fangs"
 msgstr "zanne"
@@ -9323,18 +9311,23 @@ msgstr ""
 msgid "Phantom Soldier"
 msgstr "Soldato"
 
-#. [advancement]: id=amla_anger
+#. [advancement]: id=amla_phantom1
 #: Bad_Moon_Rising/units/phantom/Phantom_Soldier.cfg:20
-msgid "Max HP bonus +2, Attack +1, Max Exp penalty +20%"
+msgid "Max HP bonus +2, Melee Damage +1, Max Exp penalty +20%"
+msgstr ""
+
+#. [advancement]: id=amla_phantom2
+#: Bad_Moon_Rising/units/phantom/Phantom_Soldier.cfg:49
+msgid "Max HP bonus +2, Ranged Strikes +1, Max Exp penalty +20%"
 msgstr ""
 
 #. [unit_type]: id=Phantom Soldier, race=phantom
-#: Bad_Moon_Rising/units/phantom/Phantom_Soldier.cfg:47
+#: Bad_Moon_Rising/units/phantom/Phantom_Soldier.cfg:78
 msgid "Phantom Soldiers are the angry shadows of former Royal soldiers..."
 msgstr ""
 
 #. [attack]: type=cold
-#: Bad_Moon_Rising/units/phantom/Phantom_Soldier.cfg:112
+#: Bad_Moon_Rising/units/phantom/Phantom_Soldier.cfg:143
 #: Bad_Moon_Rising/units/phantom/Phantom_Spear.cfg:84
 msgid "Hatred"
 msgstr ""
@@ -9391,9 +9384,9 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=blade
-#: Bad_Moon_Rising/units/primeval/Primeval_Ironwheel.cfg:44
-#: Bad_Moon_Rising/units/primeval/Primeval_Aerowheel.cfg:54
-#: Bad_Moon_Rising/units/primeval/Primeval_Protector.cfg:38
+#: Bad_Moon_Rising/units/primeval/Primeval_Ironwheel.cfg:45
+#: Bad_Moon_Rising/units/primeval/Primeval_Aerowheel.cfg:53
+#: Bad_Moon_Rising/units/primeval/Primeval_Protector.cfg:35
 msgid "Chakram"
 msgstr ""
 
@@ -9449,13 +9442,6 @@ msgid ""
 "Special Note:"
 msgstr ""
 
-#. [attack]: type=blade
-#: Bad_Moon_Rising/units/primeval/Primeval_Warrior.cfg:36
-#: Bad_Moon_Rising/units/primeval/Primeval_Dogface.cfg:32
-#, fuzzy
-msgid "Axe"
-msgstr "ascia"
-
 #. [unit_type]: id=Primeval Driver, race=primeval
 #: Bad_Moon_Rising/units/primeval/Primeval_Driver.cfg:5
 msgid "Driver"
@@ -9472,22 +9458,22 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=impact
-#: Bad_Moon_Rising/units/primeval/Primeval_Driver.cfg:43
-#: Bad_Moon_Rising/units/primeval/Primeval_Giant.cfg:36
+#: Bad_Moon_Rising/units/primeval/Primeval_Driver.cfg:42
+#: Bad_Moon_Rising/units/primeval/Primeval_Giant.cfg:32
 #, fuzzy
 msgid "Chain"
 msgstr "Khant"
 
 #. [berserk]: id=aggression
-#: Bad_Moon_Rising/units/primeval/Primeval_Driver.cfg:50
-#: Bad_Moon_Rising/units/primeval/Primeval_Giant.cfg:44
+#: Bad_Moon_Rising/units/primeval/Primeval_Driver.cfg:49
+#: Bad_Moon_Rising/units/primeval/Primeval_Giant.cfg:40
 #, fuzzy
 msgid "aggression"
 msgstr "Carson"
 
 #. [berserk]: id=aggression
-#: Bad_Moon_Rising/units/primeval/Primeval_Driver.cfg:52
-#: Bad_Moon_Rising/units/primeval/Primeval_Giant.cfg:46
+#: Bad_Moon_Rising/units/primeval/Primeval_Driver.cfg:51
+#: Bad_Moon_Rising/units/primeval/Primeval_Giant.cfg:42
 msgid ""
 "Aggression:\n"
 "This attack presses the engagement twice as long as usual."
@@ -9496,7 +9482,7 @@ msgstr ""
 #. [attack]: type=fire
 #. [unit_type]: id=Primeval Firewheel, race=primeval
 #: Bad_Moon_Rising/units/primeval/Primeval_Firewheel.cfg:5
-#: Bad_Moon_Rising/units/primeval/Primeval_Firewheel.cfg:53
+#: Bad_Moon_Rising/units/primeval/Primeval_Firewheel.cfg:54
 msgid "Firewheel"
 msgstr ""
 
@@ -9566,13 +9552,13 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=blade
-#: Bad_Moon_Rising/units/primeval/Primeval_Hektor.cfg:45
+#: Bad_Moon_Rising/units/primeval/Primeval_Hektor.cfg:27
 #, fuzzy
 msgid "Dagger"
 msgstr "pugnale"
 
 #. [attack]: type=impact
-#: Bad_Moon_Rising/units/primeval/Primeval_Hektor.cfg:54
+#: Bad_Moon_Rising/units/primeval/Primeval_Hektor.cfg:36
 msgid "Bolas"
 msgstr ""
 
@@ -9584,7 +9570,7 @@ msgid "Pantheon Queen"
 msgstr ""
 
 #. [unit_type]: id=Primeval Hera, race=primeval
-#: Bad_Moon_Rising/units/primeval/Primeval_Hera.cfg:21
+#: Bad_Moon_Rising/units/primeval/Primeval_Hera.cfg:22
 msgid ""
 "Hera is the surviving ruler of the Primevals...\n"
 "Special Note:  This unit cannot be killed."
@@ -9592,7 +9578,7 @@ msgstr ""
 
 #. [attack]: type=arcane
 #: Bad_Moon_Rising/units/primeval/Primeval_Hera_Cloak.cfg:60
-#: Bad_Moon_Rising/units/primeval/Primeval_Hera.cfg:57
+#: Bad_Moon_Rising/units/primeval/Primeval_Hera.cfg:58
 #, fuzzy
 msgid "Glare"
 msgstr "Guardia"
@@ -9659,7 +9645,7 @@ msgstr ""
 
 #. [attack]: type=blade
 #: Bad_Moon_Rising/units/primeval/Primeval_Slasher.cfg:43
-#: Bad_Moon_Rising/units/primeval/Primeval_Protector.cfg:47
+#: Bad_Moon_Rising/units/primeval/Primeval_Protector.cfg:44
 msgid "Glaive"
 msgstr ""
 
@@ -9981,7 +9967,7 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=blade
-#: Bad_Moon_Rising/units/ukians/Ukian_Attackdog.cfg:47
+#: Bad_Moon_Rising/units/ukians/Ukian_Attackdog.cfg:48
 msgid "fury"
 msgstr "furia"
 
@@ -10291,14 +10277,16 @@ msgstr ""
 
 #. [race]: id=ukian
 #: Bad_Moon_Rising/units/ukians_race.cfg:11
+#, fuzzy
 msgid ""
-"Abban,Aibhne,Aiden,Ailill,Allen,Artan,Bairrfhionn,Bevan,Bowen,Braeden,Brogan,"
-"Buadhach,Cadeyrn,Calbhach,Caradog,Carden,Cearbhall,Coalan,Cuan,Daigh,Daimhin,"
-"Deverell,Dubhaltach,Eadoin,Eben,Eoghan,Eunan,Faolan,Gahareet,Gavin,Irial,"
-"Jodoc,Kedehern,Koun,Laoire,Lorcan,Lughaidh,Lugobelinos,Lugovalos,Maol "
-"Mhurire,Maponos,Marcan,Morann,Morcant,Murchadh,Nuadha,Olcan,Osan,Peredur,"
-"Piran,Ruadhan,Ruarc,Scoithin,Sioda,Siollan,Teutorigos,Tighearnach,Tiobraide,"
-"Torcan,Triston,Tuathal,Tuireann,Ultan,Vercingetorix"
+"Abban,Aibhne,Aiden,Ailill,Allen,Artan,Bairrfhionn,Bevan,Bowen,Braeden,"
+"Bretach,Brogan,Buadhach,Cadeyrn,Calbhach,Caradog,Carden,Cearbhall,Coalan,"
+"Cuan,Daigh,Daimhin,Deverell,Dubhaltach,Eadoin,Eben,Eoghan,Eunan,Faolan,Fhaen "
+"Darach,Gahareet,Gavin,Irial,Jodoc,Kedehern,Koun,Laoire,Lorcan,Lughaidh,"
+"Lugobelinos,Lugovalos,Maol Mhurire,Maponos,Marcan,Morann,Morcant,Murchadh,"
+"Nuadha,Olcan,Osan,Peredur,Piran,Ruadhan,Ruarc,Scoithin,Sioda,Siollan,"
+"Teutorigos,Tighearnach,Tiobraide,Torcan,Triston,Tuathal,Tuireann,Ultan,"
+"Vercingetorix"
 msgstr ""
 "Abban,Aibhne,Aiden,Ailill,Allen,Artan,Bairrfhionn,Bevan,Bowen,Braeden,Brogan,"
 "Buadhach,Cadeyrn,Calbhach,Caradog,Carden,Cearbhall,Coalan,Cuan,Daigh,Daimhin,"
